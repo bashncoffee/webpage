@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Kolasa - Portfolio & CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="lang-en">
+
+    <nav class="toolbar no-print">
+        <div class="toolbar-content">
+            <div class="brand">DK<span>.cv</span></div>
+            <div class="controls">
+                <button onclick="toggleLanguage()" class="btn-icon" title="Change Language">
+                    <span id="lang-label">PL</span>
+                </button>
+                <button onclick="toggleTheme()" class="btn-icon" title="Toggle Dark/Light">
+                    <span id="theme-icon">🌙</span>
+                </button>
+                <button onclick="generatePDF()" class="btn-primary">
+                    <span class="icon">📥</span> <span class="btn-text">PDF</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="app-container">
+        <div class="dashboard">
+            <aside class="sidebar">
+                <header class="identity">
+                    <div class="avatar">DK</div>
+                    <h1>Daniel Kolasa</h1>
+                    <p class="subtitle" data-en="Treasury & Automation Specialist" data-pl="Specjalista Treasury i Automatyzacji"></p>
+                </header>
+
+                <div class="contact-info">
+                    <div class="c-item"><span>📍</span> Poznań, Poland</div>
+                    <div class="c-item"><span>📞</span> +48 725 064 909</div>
+                    <div class="c-item"><span>✉️</span> daniel.kolasa@icloud.com</div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 data-en="Core Tech" data-pl="Technologie"></h3>
+                    <div class="tags">
+                        <span>Python</span><span>SQL</span><span>Pandas</span><span>NiFi</span><span>Spark</span><span>Docker</span><span>Git</span><span>VBA</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 data-en="Compliance & Finance" data-pl="Compliance i Finanse"></h3>
+                    <div class="tags">
+                        <span class="highlight">OFAC</span><span class="highlight">Sanctions</span><span>ISO 20022</span><span>MT940</span><span>Quantum</span><span>Trax</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 data-en="Languages" data-pl="Języki"></h3>
+                    <div class="lang-bar"><span>English</span><div class="level"><div class="fill" style="width: 85%"></div></div></div>
+                    <div class="lang-bar"><span>Ukrainian</span><div class="level"><div class="fill" style="width: 60%"></div></div></div>
+                    <div class="lang-bar"><span>German</span><div class="level"><div class="fill" style="width: 40%"></div></div></div>
+                </div>
+            </aside>
+
+            <main class="main-content">
+                <section class="card profile">
+                    <h2 data-en="Professional Summary" data-pl="Profil Zawodowy"></h2>
+                    <p data-en="Treasury Specialist with 3+ years of experience in global operations. Expert in capital liquidity management across high-risk/sanctioned jurisdictions (OFAC/EU). Proven track record in recovering $100k+ in dormant assets and automating multi-million dollar cash flows." 
+                       data-pl="Specjalista Treasury z ponad 3-letnim doświadczeniem. Ekspert w zarządzaniu płynnością kapitałową w jurysdykcjach wysokiego ryzyka (OFAC/UE). Skutecznie przywrócił ponad $100k nieaktywnych aktywów i zautomatyzował wielomilionowe przepływy pieniężne."></p>
+                </section>
+
+                <section class="card">
+                    <h2 data-en="Experience" data-pl="Doświadczenie"></h2>
+                    
+                    <div class="timeline-item">
+                        <div class="time">03.2022 – Present</div>
+                        <div class="job-info">
+                            <h3 data-en="Treasury Analyst / Automation Specialist" data-pl="Analityk Treasury / Specjalista ds. Automatyzacji"></h3>
+                            <p class="company">ADM (Archer Daniels Midland)</p>
+                            <ul data-en-list="Sanctions Management: Ensuring liquidity and compliance within OFAC/EU restricted jurisdictions.;Asset Recovery: Restored $100k+ by auditing dormant accounts and unassigned funds.;M&A Integration: Technical lead for Citibank platform consolidation.;Automation: Built Python/NiFi pipelines for EMEA cash-visibility."
+                                data-pl-list="Zarządzanie Sankcjami: Zapewnienie płynności i zgodności w jurysdykcjach objętych restrykcjami OFAC/UE.;Odzyskiwanie Aktywów: Przywrócenie ponad $100k poprzez audyt nieaktywnych kont.;Integracja M&A: Lider techniczny konsolidacji globalnej platformy Citibank.;Automatyzacja: Budowa procesów Python/NiFi dla raportowania cash-visibility."></ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="time">09.2021 – 03.2022</div>
+                        <div class="job-info">
+                            <h3 data-en="Junior Treasury Analyst" data-pl="Młodszy Analityk Treasury"></h3>
+                            <p class="company">ADM</p>
+                            <ul data-en-list="Reconciliation: Managed data consistency across global ERP and bank systems.;Process Optimization: Reduced bank fees through subsidiary account structure review."
+                                data-pl-list="Rekoncyliacja: Nadzór nad spójnością danych między systemami ERP a bankami.;Optymalizacja: Redukcja kosztów bankowych poprzez przegląd struktur kont."></ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="time">2018 – 2021</div>
+                        <div class="job-info">
+                            <h3 data-en="E-commerce Owner" data-pl="Właściciel E-commerce"></h3>
+                            <p class="company">Self-Employed</p>
+                            <ul data-en-list="Full-stack Management: Built online store infrastructure using HTML/CSS/JS.;Automation: Implemented automated stock and logistics sync."
+                                data-pl-list="Zarządzanie Full-stack: Budowa infrastruktury sklepu (HTML/CSS/JS).;Automatyzacja: Wdrożenie automatycznej synchronizacji zapasów i logistyki."></ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card projects">
+                    <h2 data-en="Technical Projects" data-pl="Projekty Techniczne"></h2>
+                    <div class="project-grid">
+                        <div class="p-item">
+                            <strong data-en="Enterprise Data Warehouse" data-pl="Prototyp EDW"></strong>
+                            <p data-en="Python, Spark & NiFi data pipelines on Ubuntu Server." data-pl="Pipeline'y danych oparte na Spark, NiFi i Ubuntu."></p>
+                        </div>
+                        <div class="p-item">
+                            <strong data-en="Protocol Reverse Engineering" data-pl="Automatyzacja Protokołów"></strong>
+                            <p data-en="Automating web-app flows using Python and AI logic." data-pl="Automatyzacja przepływów aplikacji przy użyciu Python i AI."></p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2 data-en="Education" data-pl="Edukacja"></h2>
+                    <div class="edu-row">
+                        <strong>WSIiZ Rzeszów</strong>
+                        <span data-en="B.Eng. Applied Computer Science (In progress)" data-pl="Inż. Informatyka Stosowana (W trakcie)"></span>
+                    </div>
+                </section>
+
+                <footer class="rodo">
+                    <p data-en="I hereby give consent for my personal data to be processed for recruitment purposes." 
+                       data-pl="Wyrażam zgodę na przetwarzanie danych osobowych dla potrzeb procesu rekrutacji."></p>
+                </footer>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
